@@ -11,7 +11,7 @@ The scripts have been implemented in Python3, concretely Python version 3.9.7. T
 
 The repository is structured as follows:
 
-* The main experiments can be run with the *main.py* script, which allows changing the initialization strategies, incremental learning techinques and datasets. The *experiments.sh* script contains the scripts to automatically genererate the experiments in the paper. However, to run a concrete experiment the basic syntax would be the following, where -dataset can be in *[FBinc-S,FBinc-M,FBinc-L]*, depending on the number of new entities added in each additional snapshot, -lifelong_name can be *LKGE*, *incDE*, *EWC*, *EMR* or *finetune*, and -init can be 0 for random initialization, 1 for schema initialization or 3 for model initialization. 
+* The main experiments can be run with the *main.py* script, which allows changing the initialization strategies, incremental learning techinques and datasets. The *experiments.sh* script contains the scripts to automatically genererate the experiments in the paper. However, to run a concrete experiment the basic syntax would be the following, where -dataset can be in *[FBinc-S,FBinc-M,FBinc-L,EventInc]*, depending on the number of new entities added in each additional snapshot, -lifelong_name can be *LKGE*, *incDE*, *EWC*, *EMR* or *finetune*, and -init can be 0 for random initialization, 1 for schema initialization or 3 for model initialization. 
 ```bash
 python main.py -dataset <dataset-name> -gpu 0 -lifelong_name <incremental-learning> -init <initialization-strategy> 
 ```

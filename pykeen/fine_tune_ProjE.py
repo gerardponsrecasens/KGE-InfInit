@@ -36,7 +36,7 @@ model_name = 'ProjE'
 
 
 seeds = [11,22,33,44,55]
-datasets = ['FBinc-S','FBinc-M','FBinc-L']
+datasets = ['FBinc-S','FBinc-M','FBinc-L','EventInc']
 initializations = [0, 1] # 0: random initialization; 1: schema initialization
 learning_rates_fine_tune = [0.001, 0.0005, 0.00001]
 sd_fracs = [0, 0.1, 0.5, 1]
